@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="startTime()">
+    <div class="head">
+        <h2 class="dataH">Data</h2>
+        <h2 class="dataH2">Mahasiswa || </h2>
+        <img style="position: absolute;" src="rocket.png">
+    </div>
+    <div class="head2">
+        <h3 class="dataHead1">Hello, 世界 !</h3>
+        <div id="time"></div>
+    </div>
+    <div class="head3">
+        <q id="quotes"> <b> Your most unhappy customers are your greatest source of learning. </b> </q><p style="display: inline-block;">- Bill Gates. CEO of Microsoft</p>
+    </div> <br>
+
+
+    <div class="box1">
+            <form class="myForm" id="myForm" onsubmit="event.preventDefault()" autocomplete="off">
+            <div id="divNumber">
+                <label>NIM</label>
+                <input type="number" id="numberData" placeholder="Nomor Induk Mahasiswa">
+            </div>
+            <div id="divNama">
+                <label>Nama Lengkap</label>
+                <input type="text" id="fullName" placeholder="Nama Lengkap">
+            </div>
+            <div id="divAlamat">
+                <label>Alamat</label>
+                <input type="text" id="addressData" placeholder="Alamat Tempat Tinggal Asal">
+            </div><br>
+            <div class="submitBtn">
+            <button onclick="addRow()" type="submit" id="submit"><b>&#43;</b>Tambah</button>
+            <button type="reset" id="reset"><b>&#8634;</b>Reset</button>
+            </div>
+            </form>
+    </div><br><br>
+
+   <div class="box2">
+    <table id="dataMahasiswa" class="content-table">
+        <thead>
+            <tr>
+                <th style="width: 25%;">NIM</th>
+                <th style="width: 25%;">Nama Lengkap</th>
+                <th style="width: 30%;">Alamat</th>
+                <th style="width: 20%;">Pengaturan</th>
+            </tr>
+    </thead>
+    <tbody>
+          <tr>
+
+          </tr>
+    </tbody>
+    </table>
+  </div>
+    <!--Modal-->
+    <div id="myModal" class="modal" style="color: black;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2 class ="headerData"></h2>
+          </div>
+          <div class="modal-body">
+              <p class ="bodyData"></p>
+          </div>
+        </div>
+      </div>
+    <!-- Modal Edit -->
+    <div id="modalEdit" class="modal">
+        <div class="editContent">
+          <div class="headerEdit">
+            <h2 class ="headerData1">Edit Data</h2>
+            <span class="close1">&times;</span>
+          </div>
+        <div class="bodyEdit">
+            <label style="color: black;">NIM</label>
+            <input type="number" id="numberDataedit" disabled size="30"><br><br>
+            <label style="color: black;">Nama Lengkap</label>
+            <input type="text" id="fullNameedit"><br><br>
+            <label style="color: black;">Alamat</label>
+            <input type="text" id="addressDataedit"><br><br>
+            <div class="btnModaledit">
+            <button id="cancel">&#10006;Cancel</button>
+            <button id="save">&#128190;Save</button>
+        </div>
+          </div>
+        </div>
+      </div>
+      
+    <script src="logic.js"></script>
+
+</body>
+</html>

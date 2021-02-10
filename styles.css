@@ -1,0 +1,443 @@
+body{
+    font-family: "B612",arial,helvetica;
+    background-color: #59253A;
+    color: white;
+}
+.head{
+    width: 100.8%;
+    margin-left: -7px;
+    margin-top: -8px;
+    background-color: #1d1e1f;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+}
+
+.content-table{
+ border-collapse: collapse;
+ width: 100%;
+ margin: 25px 0;
+ font-size: 0.9em;
+ min-width: 400px;
+ border-radius: 5px 5px 0 0;
+ overflow: hidden;
+ box-shadow: 0 0  50px rgba(0, 0, 0, 0.15);
+ color: black;
+}
+
+.content-table thead tr{
+    background-color: #0677A1;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+
+.content-table th,
+.content-table td{
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid white;
+    background-color: white;
+}
+
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid #009879;
+}
+
+
+
+.box1{
+    background-color: #78244C;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    color: white;
+    border-radius: 5px;
+    margin-left: -50x;
+    padding-left: 20px;
+}
+.dataH{
+    color: #DDDDDD;
+    display: inline;
+}
+.dataH2{
+    color: #ce2759;
+    display: inline;
+}
+.dataHead1{
+    display: inline;
+}
+#time{
+    display: inline;
+    float: right;
+    font-size: larger;
+}
+.head2{
+    padding-bottom: 25px;
+    padding-top: 25px;
+    border-bottom: 3px solid #0677A1;
+}
+.head3{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 3px solid #0677A1;
+}
+#numberData{
+    margin-left: 100px;
+    width: 89%;
+    padding: 10px;
+    border-radius: 5px;
+    border:1px solid#DDD;
+}
+#numberDataedit{
+    margin-left: 100px;
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border:1px solid#DDD;
+}
+#fullName{
+    margin-left: 23px;
+    width: 89%;
+    padding: 10px;
+    border-radius: 5px;
+    border:1px solid #DDD;
+}
+#fullNameedit{
+    margin-left: 30px;
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border:1px solid #DDD;
+}
+#addressData{
+    margin-left: 83px;
+    width: 89%;
+    padding: 10px;
+    border-radius: 5px;
+    border:1px solid #DDD;
+}
+#addressDataedit{
+    margin-left: 83px;
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border:1px solid #DDD;
+}
+#divNumber{
+    padding-bottom: 15px;
+}
+#divNama{
+    padding-bottom: 15px;
+}
+#divAlamat{
+    padding-bottom: 15px;
+}
+
+
+.submitBtn{
+margin-left: 91%;
+}
+#submit{
+padding: 6px;
+background-color: #157FBA;
+border-radius: 5px;
+border:#DDD;
+color: white;
+}
+#submit button[type=submit]:hover{
+transform: scale(1.2s);
+}
+#reset{
+padding: 6px;
+background-color: #EBBE18;
+border-radius: 5px;
+border:#DDD ;
+color: #574104;
+}
+
+/** modal */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+
+  .editContent {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+ 
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close1 {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .close1:hover,
+  .close1:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #1086DF;
+    color: white;
+    text-align: left;
+  }
+
+  .headerEdit {
+    padding: 2px 16px;
+    background-color: #1086DF;
+    color: white;
+    text-align: left;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  .bodyEdit {
+    padding: 2px 16px;
+    padding-bottom: 50px;
+    padding-top: 30px ;
+}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #1086DF;
+    color: white;
+  }
+
+  @media only screen and (max-width: 1255px) {
+    #numberDataedit{
+        margin-left: 100px;
+        width: 50%;
+        padding: 10px;
+        border-radius: 5px;
+        border:1px solid#DDD;
+        color: black;
+    }
+    #fullNameedit{
+        margin-left: 30px;
+        width: 50%;
+        padding: 10px;
+        border-radius: 5px;
+        border:1px solid #DDD;
+    }
+    #addressDataedit{
+        margin-left: 83px;
+        width: 50%;
+        padding: 10px;
+        border-radius: 5px;
+        border:1px solid #DDD;
+    }
+    #fullName{
+        margin-left: 30px;
+        width: 62%;
+        padding: 10px;
+        border-radius: 5px;
+        border:1px solid #DDD;
+    }
+    #numberData{
+        margin-left: 105px;
+        width: 61%;
+        padding: 10px;
+        border-radius: 5px;
+        border:1px solid#DDD;
+    }
+    #addressData{
+        margin-left: 83px;
+        width: 62%;
+        padding: 10px;
+        border-radius: 5px;
+        border:1px solid #DDD;
+    }
+    #submit{
+        padding: 6px;
+        margin-left: -100px;
+        background-color: #157FBA;
+        border-radius: 5px;
+        border:#DDD;
+        color: white;
+        }
+
+     .head{
+        width: 110%;
+        margin-left: -9px;
+        margin-top: -10px;
+        background-color: #1D1E1E;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        }
+        .content-table{
+            border-collapse: collapse;
+            width: 100%;
+            margin: 25px 0;
+            font-size: 0.9em;
+            min-width: 400px;
+            border-radius: 5px 5px 0 0;
+            overflow: hidden;
+            box-shadow: 0 0  20px rgba(0, 0, 0, 0.15);
+           }
+}
+
+@media only screen and (max-width: 405px) {
+    .box1{
+        width: 100%;
+    }
+    #numberDataedit{
+        margin-left: 50px;
+        width: 50%;
+        padding: 10px;
+        border-radius: 5px;
+        border:1px solid#DDD;
+        color: black;
+    }
+    #fullNameedit{
+        margin-left: 50px;
+        width: 10%;
+        padding: 10px;
+        border-radius: 5px;
+        border:1px solid #DDD;
+    }
+    #addressDataedit{
+        margin-left: 83px;
+        width: 50%;
+        padding: 10px;
+        border-radius: 5px;
+        border:1px solid #DDD;
+    }
+    #fullName{
+        margin-left: 30px;
+        width: 35%;
+        padding: 10px;
+        border-radius: 5px;
+        border:1px solid #DDD;
+    }
+    #numberData{
+        margin-left: 110px;
+        width: 35%;
+        padding: 10px;
+        border-radius: 5px;
+        border:1px solid#DDD;
+    }
+    #addressData{
+        margin-left: 90px;
+        width: 35%;
+        padding: 10px;
+        border-radius: 5px;
+        border:1px solid #DDD;
+    }
+    #submit{
+        padding: 6px;
+        margin-left: -150px;
+        background-color: #157FBA;
+        border-radius: 5px;
+        border:#DDD;
+        color: white;
+        }
+
+     .head{
+        width: 105%;
+        margin-left: -9px;
+        margin-top: -10px;
+        background-color: #1D1E1E;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        }
+        .content-table{
+            border-collapse: collapse;
+            width: 100%;
+            margin: 25px 0;
+            font-size: 0.9em;
+            min-width: 400px;
+            border-radius: 5px 5px 0 0;
+            overflow: hidden;
+            box-shadow: 0 0  20px rgba(0, 0, 0, 0.15);
+           }
+           }
+
+
+
+#save{
+    padding: 6px;
+    background-color: #157FBA;
+    border-radius: 5px;
+    border:#DDD;
+    color: white;
+    } 
+#cancel{
+    padding: 6px;
+    background-color: grey;
+    border-radius: 5px;
+    border:#DDD;
+    color: white;
+    }
+
+    .btnModaledit{
+        float: right;
+    }
